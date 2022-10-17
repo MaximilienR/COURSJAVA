@@ -7,7 +7,6 @@ public class DemoEnum {
         switch (priority){
             case HIGH :
                 System.out.println("High Priority");
-                break;
 
             case MEDIUM:
                 System.out.println("MEdium Priority");
