@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.methode.MethodeParam;
+import org.example.poo.Phone;
 import org.example.poo.Product;
 import org.example.readFromConsole.ReadFromConsole;
 import org.example.string.ChaineCaractere;
@@ -41,6 +42,17 @@ public class Main {
         System.out.println(p.getName());
         System.out.println(p2.getName());
 
+        Phone phone =new Phone( 12);
+        phone.setName("Iphone");
+        phone.setId(3);
+        System.out.println(phone.toString());
+        Phone phone1=new Phone(1,"Nokia",45);
+        System.out.println(phone1.toString());
+
+        //Product.getBonjour
+
+        phone.whatIam();
+        p.whatIam();
 
     }
 };

@@ -2,8 +2,8 @@ package org.example.poo;
 
 public class Product {
 
-    private  int id;
-    private String name;
+    protected   int id;
+    protected String name;
 
     public  Product(){
 
@@ -28,6 +28,14 @@ public class Product {
     public void setId(int id) {
         this.id = id;
     }
+
+    public static void getBonjour(){
+        System.out.println("bonjour");
+    }
+    public void  whatIam(){
+        System.out.println("je suis un produit");
+    }
+
 
     @Override
     public String toString() {
