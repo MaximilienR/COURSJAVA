@@ -3,6 +3,7 @@ package org.example;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
 import org.example.poo.Product;
+import org.example.poo.inner.OuterClass;
 import org.example.readFromConsole.ReadFromConsole;
 import org.example.string.ChaineCaractere;
 import org.example.variable.Variable;
@@ -35,7 +36,7 @@ public class Main {
         MethodeParam.changeArray(array);
         System.out.println("Array aores methode changeArray" + Arrays.toString(array));
         System.out.println("class :"+array.getClass());
-    }/*/
+    }/
         Product p = new Product();
         Product p2 =new Product(1,"Pantalon");
         p.setName("Jupe");
@@ -53,6 +54,13 @@ public class Main {
 
         phone.whatIam();
         p.whatIam();
+        */
+        OuterClass outerClass=new OuterClass();
+        OuterClass.InnerClass Inner = outerClass.new InnerClass();
+
+        Inner.afficheMessage2();
+        OuterClass.AutreClassInne autreClassInne=new OuterClass.AutreClassInne();
+        autreClassInne.afficheMessage();
 
     }
 };
