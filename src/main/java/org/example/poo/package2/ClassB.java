@@ -1,6 +1,6 @@
 package org.example.poo.package2;
 
-public class ClassB extends ClassC{
+public class ClassB {
     protected  void doSomethingB(){
 
     }
@@ -8,6 +8,6 @@ public class ClassB extends ClassC{
 
     }
     void doSomethingB3(){
-        
+
     }
 }
