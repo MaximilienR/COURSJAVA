@@ -69,7 +69,7 @@ public class Main {
         OuterClass.AutreClassInne autreClassInne=new OuterClass.AutreClassInne();
         autreClassInne.afficheMessage();
 
-        listDemo.main();*/
+        listDemo.main();
 
         List<RandomPerson>personList=new ArrayList<>();
 
@@ -77,6 +77,7 @@ public class Main {
 
         ListDemo.trieOrderRandomPerson(Order.CITY, personList);
 
-        RandomPerson.affichePerson(personList);
+        RandomPerson.affichePerson(personList);*/
+        //LinkedList()
     }
 };
