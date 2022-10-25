@@ -31,4 +31,6 @@ public class VectorDemo {
             System.out.println("element"+e.nextElement());
         }
     }
+
+
 }

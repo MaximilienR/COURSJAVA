@@ -3,6 +3,7 @@ package org.example;
 import org.example.collections.liste.entity.ListDemo;
 import org.example.collections.liste.entity.RandomPerson;
 import org.example.collections.liste.enums.Order;
+import org.example.collections.liste.set.SetDemo;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
 import org.example.poo.Product;
@@ -79,5 +80,6 @@ public class Main {
 
         RandomPerson.affichePerson(personList);*/
         //LinkedList()
+        SetDemo.main();
     }
 };
