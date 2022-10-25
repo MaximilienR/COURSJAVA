@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.collections.liste.entity.ListDemo;
+import org.example.collections.liste.entity.RandomPerson;
+import org.example.collections.liste.enums.Order;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
 import org.example.poo.Product;
@@ -8,7 +11,11 @@ import org.example.readFromConsole.ReadFromConsole;
 import org.example.string.ChaineCaractere;
 import org.example.variable.Variable;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
+import static org.example.collections.liste.entity.ListDemo.listDemo;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,7 +61,7 @@ public class Main {
 
         phone.whatIam();
         p.whatIam();
-        */
+
         OuterClass outerClass=new OuterClass();
         OuterClass.InnerClass Inner = outerClass.new InnerClass();
 
@@ -62,5 +69,14 @@ public class Main {
         OuterClass.AutreClassInne autreClassInne=new OuterClass.AutreClassInne();
         autreClassInne.afficheMessage();
 
+        listDemo.main();*/
+
+        List<RandomPerson>personList=new ArrayList<>();
+
+        RandomPerson.addData(5,personList);
+
+        ListDemo.trieOrderRandomPerson(Order.CITY, personList);
+
+        RandomPerson.affichePerson(personList);
     }
 };
