@@ -62,7 +62,7 @@ public class ListDemo {
 
         System.out.println("===creation d'une seconde liste ");
         addData(7,listDemo2);
-        System.out.println("affuche la nouvelle liste");
+        System.out.println("affiche la nouvelle liste");
         affichePerson(listDemo2);
         System.out.println("==ajouter la liste demo 2 à la liste demo1");
         listDemo.addAll(listDemo2);

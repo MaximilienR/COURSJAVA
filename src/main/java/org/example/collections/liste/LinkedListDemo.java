@@ -32,7 +32,7 @@ public class LinkedListDemo {
        //listeDemo.removeFirst();
        // listeDemo.removeLast();
 
-        RandomPerson person3=new RandomPerson();
+        RandomPerson person3= new RandomPerson();
 
         person3=person2;
 
@@ -48,7 +48,7 @@ public class LinkedListDemo {
         //listeDemo.getLast();
 
         System.out.println("le premier element de ma liste est :"+listeDemo.getFirst());
-        System.out.println("le premier element de ma liste est :"+listeDemo.getLast());
+        System.out.println("le dernier element de ma liste est :"+listeDemo.getLast());
 
 
     }

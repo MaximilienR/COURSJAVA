@@ -1,9 +1,11 @@
 package org.example;
 
+import org.example.collections.liste.LinkedListDemo;
 import org.example.collections.liste.entity.ListDemo;
 import org.example.collections.liste.entity.RandomPerson;
 import org.example.collections.liste.enums.Order;
 import org.example.collections.liste.set.SetDemo;
+import org.example.map.MapDemo;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
 import org.example.poo.Product;
@@ -79,7 +81,8 @@ public class Main {
         ListDemo.trieOrderRandomPerson(Order.CITY, personList);
 
         RandomPerson.affichePerson(personList);*/
-        //LinkedList()
-        SetDemo.main();
+       // LinkedListDemo.main();
+        MapDemo.main();
+       // SetDemo.main();
     }
 };
