@@ -29,16 +29,16 @@ public class DemoExceptionImbrique {
     public static void main2(){
         try {
 
-            int num = Integer.parseInt("9");
+            int num = Integer.parseInt("5");
             System.out.println(num);
             int[] a = new  int[5];
             a[0]=9;
             System.out.println(a[12]);
 
         }catch (NumberFormatException | ArrayIndexOutOfBoundsException e){
-
             e.printStackTrace();
-
+        }finally {
+            System.out.println("je suis l'operartion final");
         }
     }
 }
