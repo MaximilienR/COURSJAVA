@@ -8,6 +8,7 @@ import org.example.collections.liste.set.SetDemo;
 import org.example.exception.DemoThrows;
 import org.example.exception.SimpleExemple;
 import org.example.exception.exceptionPerso.CheckMyAge;
+import org.example.exception.exceptionlmbrique.DemoExceptionImbrique;
 import org.example.map.MapDemo;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
@@ -91,10 +92,11 @@ public class Main {
        // SimpleExemple.main();
        // CheckMyAge.main();
 
-        try{
+       /* try{
             DemoThrows.main();
         }catch (IOException e){
             System.out.println("c'est une exception ...");
-        }
+        }*/
+        DemoExceptionImbrique.main();
     }
 };
