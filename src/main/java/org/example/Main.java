@@ -97,6 +97,6 @@ public class Main {
         }catch (IOException e){
             System.out.println("c'est une exception ...");
         }*/
-        DemoExceptionImbrique.main();
+        DemoExceptionImbrique.main2();
     }
 };

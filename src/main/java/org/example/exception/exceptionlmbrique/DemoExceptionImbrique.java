@@ -3,7 +3,6 @@ package org.example.exception.exceptionlmbrique;
 public class DemoExceptionImbrique {
     public static void main(){
         try {
-
             try {
                 int num = Integer.parseInt("9");
                 System.out.println(num);
@@ -25,6 +24,21 @@ public class DemoExceptionImbrique {
 
             }catch (Exception e){
             System.out.println("Exception general : ");
+        }
+    }
+    public static void main2(){
+        try {
+
+            int num = Integer.parseInt("9");
+            System.out.println(num);
+            int[] a = new  int[5];
+            a[0]=9;
+            System.out.println(a[12]);
+
+        }catch (NumberFormatException | ArrayIndexOutOfBoundsException e){
+
+            e.printStackTrace();
+
         }
     }
 }
