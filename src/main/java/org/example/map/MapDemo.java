@@ -29,9 +29,10 @@ public class MapDemo {
 
         User user = new User();
         user.getFirstName("Smith");
-        user.getFirstName("Neo");
+        user.getLastName("Neo");
 
         Product product=new Product();
+
         userProductMap.put(user,product);
 
         System.out.println("get product by user"+userProductMap.get(user));
