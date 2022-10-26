@@ -16,6 +16,7 @@ import org.example.poo.Product;
 import org.example.poo.inner.OuterClass;
 import org.example.readFromConsole.ReadFromConsole;
 import org.example.stream.Demo1;
+import org.example.stream.Demo2;
 import org.example.string.ChaineCaractere;
 import org.example.variable.Variable;
 
@@ -99,6 +100,6 @@ public class Main {
             System.out.println("c'est une exception ...");
         }*/
         //DemoExceptionImbrique.main2();
-        Demo1.main();
+        Demo2.main();
     }
 };
