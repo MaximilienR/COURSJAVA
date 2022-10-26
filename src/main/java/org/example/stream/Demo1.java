@@ -1,6 +1,7 @@
 package org.example.stream;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static org.example.methode.MethodeParam.sum;
 
@@ -52,5 +53,12 @@ public class Demo1 {
         int somme=Arrays.stream(nbr).reduce(0,(a,b)->a+b);
 
         System.out.println("la somme du tableau nrb est de "+ somme);
+
+
+        List<Integer>nbrs = Arrays.asList(1,2,3,4,5);
+        List<Integer> pairs=nbrs.stream()
+                .filter(x->x%2==0)
+                .collect(Collectors.toList());
+        pairs.stream().forEach(System.out::println);
     }
 }
