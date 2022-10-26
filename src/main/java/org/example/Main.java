@@ -5,7 +5,9 @@ import org.example.collections.liste.entity.ListDemo;
 import org.example.collections.liste.entity.RandomPerson;
 import org.example.collections.liste.enums.Order;
 import org.example.collections.liste.set.SetDemo;
+import org.example.exception.DemoThrows;
 import org.example.exception.SimpleExemple;
+import org.example.exception.exceptionPerso.CheckMyAge;
 import org.example.map.MapDemo;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
@@ -15,6 +17,7 @@ import org.example.readFromConsole.ReadFromConsole;
 import org.example.string.ChaineCaractere;
 import org.example.variable.Variable;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -85,6 +88,13 @@ public class Main {
        // LinkedListDemo.main();
        // MapDemo.main();
        // SetDemo.main();
-        SimpleExemple.main();
+       // SimpleExemple.main();
+       // CheckMyAge.main();
+
+        try{
+            DemoThrows.main();
+        }catch (IOException e){
+            System.out.println("c'est une exception ...");
+        }
     }
 };
