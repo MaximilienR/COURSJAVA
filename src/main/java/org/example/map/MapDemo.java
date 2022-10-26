@@ -41,12 +41,11 @@ public class MapDemo {
 
         System.out.println("get product by user"+userProductMap.get(user));
 
-        User user2= new User("Michel","Johnas","1234","michel@gmail.com");
-        User user3= new User("Jean","Aubert","1234","jean@gmail.com");
-        User user4= new User("Pierre","Bashung","1234","pierre@gmail.com");
+        User user2 = new User("Michel","Johnas","1234","michel@gmail.com");
+        User user3 = new User("Jean","Aubert","1234","jean@gmail.com");
+        User user4 = new User("Pierre","Bashung","1234","pierre@gmail.com");
 
         ArrayList<User>listeUser =new ArrayList<>();
-
         listeUser.addAll(Arrays.asList(user2,user3,user4));
 
         List<Product> products = new ArrayList<>();
@@ -56,6 +55,7 @@ public class MapDemo {
         Map<Integer,List<Product>> map2 = new HashMap<>();
 
         for (int i=0;i<listeUser.size();i++){
+
             Product.addProduct(10,products);
             map2.put(listeUser.get(i).getId(),products);
         }
@@ -64,8 +64,6 @@ public class MapDemo {
                 System.out.println("User id"+entry.getKey()+" : " +p);
             }
         }
-              {
 
-        }
      }
 }
