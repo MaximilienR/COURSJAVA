@@ -59,5 +59,13 @@ public class MapDemo {
             Product.addProduct(10,products);
             map2.put(listeUser.get(i).getId(),products);
         }
-    }
+        for (Map.Entry<Integer,List<Product>> entry:map2.entrySet()) {
+            for (Product p:entry.getValue()){
+                System.out.println("User id"+entry.getKey()+" : " +p);
+            }
+        }
+              {
+
+        }
+     }
 }
