@@ -21,5 +21,22 @@ public class DemoFile {
             }
             fr.close();
             fileWriter.close();
+
         }
-}
+        public static void main2(){
+            BufferedReader reader;
+
+            try {
+                reader = new BufferedReader(new FileReader("C:\\Users\\Public\\Documents\\java\\demo\\src\\main\\java\\org\\example\\file\\file3.txt"));
+                String line = reader.readLine();
+
+            while (line!=null){
+                System.out.println(line);
+                line= reader.readLine();
+            }
+            }catch(IOException e){
+
+            }
+        }
+
+};
