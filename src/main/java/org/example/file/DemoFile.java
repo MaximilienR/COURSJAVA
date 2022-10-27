@@ -1,6 +1,10 @@
 package org.example.file;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 
 public class DemoFile {
 
@@ -36,6 +40,20 @@ public class DemoFile {
             }
             reader.close();
             }catch(IOException e){
+                e.printStackTrace();
+            }
+        }
+
+        public static void main3(){
+            try {
+                List<String>allLines = Files.readAllLines(Paths.get("C:\\Users\\Public\\Documents\\java\\demo\\src\\main\\java\\org\\example\\file\\file3.txt"));
+
+                for (String line : allLines){
+                    System.out.println(line);
+                }
+
+
+            }catch (IOException e){
                 e.printStackTrace();
             }
         }
