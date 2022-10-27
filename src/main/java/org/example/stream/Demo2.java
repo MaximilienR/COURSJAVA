@@ -55,6 +55,13 @@ public class Demo2 {
      Map<String,Product>productMap=products.stream().
              collect(Collectors.toMap(Product::getName, Function.identity()));
 
+     System.out.println("====mapToDouble & sum() demo ===");
+
+     double totalPrice = products.stream()
+             .mapToDouble(product-> product.getPrice())
+             .sum();
+
+     System.out.println("la somme des prix des produits est de "+ " "+totalPrice);
  }
 
  }
