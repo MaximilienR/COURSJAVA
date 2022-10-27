@@ -3,6 +3,8 @@ package org.example.stream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Demo2 {
@@ -48,6 +50,10 @@ public class Demo2 {
 
         Arrays.stream(products1).forEach(System.out::println);
 
+     System.out.println("======toMap ======");
+
+     Map<String,Product>productMap=products.stream().
+             collect(Collectors.toMap(Product::getName, Function.identity()));
 
  }
 
