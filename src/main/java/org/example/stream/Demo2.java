@@ -59,6 +59,7 @@ public class Demo2 {
 
      double totalPrice = products.stream()
              .mapToDouble(product-> product.getPrice())
+             .sorted()
              .sum();
 
      System.out.println("la somme des prix des produits est de "+ " "+totalPrice);

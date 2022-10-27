@@ -9,6 +9,7 @@ import org.example.exception.DemoThrows;
 import org.example.exception.SimpleExemple;
 import org.example.exception.exceptionPerso.CheckMyAge;
 import org.example.exception.exceptionlmbrique.DemoExceptionImbrique;
+import org.example.file.DemoFile;
 import org.example.map.MapDemo;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
@@ -28,7 +29,7 @@ import java.util.List;
 import static org.example.collections.liste.entity.ListDemo.listDemo;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //commentaire
         //System.out.println("ceci est un test");
         // ChaineCaractere.getFormattting();
@@ -100,6 +101,7 @@ public class Main {
             System.out.println("c'est une exception ...");
         }*/
         //DemoExceptionImbrique.main2();
-        Demo2.main();
+       // Demo2.main();
+        DemoFile.main();
     }
 };
