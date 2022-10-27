@@ -34,8 +34,9 @@ public class DemoFile {
                 System.out.println(line);
                 line= reader.readLine();
             }
+            reader.close();
             }catch(IOException e){
-
+                e.printStackTrace();
             }
         }
 
