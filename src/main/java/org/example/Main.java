@@ -10,6 +10,8 @@ import org.example.exception.SimpleExemple;
 import org.example.exception.exceptionPerso.CheckMyAge;
 import org.example.exception.exceptionlmbrique.DemoExceptionImbrique;
 import org.example.file.DemoFile;
+import org.example.file.DemoFile2;
+import org.example.file.banque.ExoBancaire;
 import org.example.map.MapDemo;
 import org.example.methode.MethodeParam;
 import org.example.poo.Phone;
@@ -21,6 +23,7 @@ import org.example.stream.Demo2;
 import org.example.string.ChaineCaractere;
 import org.example.variable.Variable;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -102,6 +105,11 @@ public class Main {
         }*/
         //DemoExceptionImbrique.main2();
        // Demo2.main();
-        DemoFile.main3();
+       // DemoFile.main3();
+       // DemoFile2.main();
+
+       // FileInputStream.main();
+
+        ExoBancaire.main();
     }
 };
